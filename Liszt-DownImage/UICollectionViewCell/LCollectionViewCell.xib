@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="LCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="283" height="215"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="283" height="215"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CDD_square_DefaultGaryColor_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="Mfw-qn-HLT">
+                        <gestureRecognizers/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8lE-su-Xco">
+                        <subviews>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="XBx-nG-9cn">
+                                <color key="tintColor" red="0.26959287059999998" green="1" blue="0.71747301969999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </progressView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="0.59445043103448281" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="XBx-nG-9cn" firstAttribute="top" secondItem="8lE-su-Xco" secondAttribute="top" id="55Q-yA-5fI"/>
+                            <constraint firstAttribute="bottom" secondItem="XBx-nG-9cn" secondAttribute="bottom" id="EJ6-mJ-rgq"/>
+                            <constraint firstItem="XBx-nG-9cn" firstAttribute="leading" secondItem="8lE-su-Xco" secondAttribute="leading" id="dkR-nU-YSC"/>
+                            <constraint firstAttribute="trailing" secondItem="XBx-nG-9cn" secondAttribute="trailing" id="ovz-P6-1dc"/>
+                            <constraint firstAttribute="height" constant="30" id="wvG-44-dhx"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Mfw-qn-HLT" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="DOi-eq-Kzn"/>
+                <constraint firstItem="8lE-su-Xco" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="S39-qP-R9G"/>
+                <constraint firstAttribute="trailing" secondItem="Mfw-qn-HLT" secondAttribute="trailing" id="UHf-Wo-9uq"/>
+                <constraint firstAttribute="trailing" secondItem="8lE-su-Xco" secondAttribute="trailing" id="V2Q-AJ-VKK"/>
+                <constraint firstItem="Mfw-qn-HLT" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="fnB-X3-BtR"/>
+                <constraint firstAttribute="bottom" secondItem="Mfw-qn-HLT" secondAttribute="bottom" id="lyc-Rx-SXx"/>
+                <constraint firstAttribute="bottom" secondItem="8lE-su-Xco" secondAttribute="bottom" id="uUf-Tk-edF"/>
+            </constraints>
+            <size key="customSize" width="283" height="215"/>
+            <connections>
+                <outlet property="imageView" destination="Mfw-qn-HLT" id="8Yx-fy-60e"/>
+                <outlet property="progressView" destination="XBx-nG-9cn" id="cIl-6S-Zjc"/>
+            </connections>
+            <point key="canvasLocation" x="-911" y="49"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="CDD_square_DefaultGaryColor_icon.png" width="310" height="310"/>
+    </resources>
+</document>
